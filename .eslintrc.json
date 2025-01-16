@@ -24,7 +24,7 @@
       "prettier/prettier": "warn",
       "react/react-in-jsx-scope": "off",
       "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-  
+
       // Custom rules "off"
       "import/no-unresolved": "off",
       "import/extensions": "off",
@@ -39,7 +39,9 @@
       "import/prefer-default-export": "off",
       "@typescript-eslint/no-unused-vars": "off",
       "react/require-default-props": "off",
-  
+      "no-nested-ternary": "off",
+      "prefer-destructuring": "off",
+
       // Custom rules "warn"
       "react/jsx-curly-brace-presence": "warn",
       "no-undef": "warn"
@@ -51,4 +53,3 @@
       "components/UI"
     ]
   }
-  

@@ -1,7 +1,7 @@
 import React from "react";
+import { observer } from "mobx-react-lite";
 import styles from "./styles.module.scss"
 import { TCat } from "../../../types/TGlobal";
-import { observer } from "mobx-react-lite";
 import { Heart } from "../../Icons/HeartLike";
 import { HeartLike } from "../../Icons/Heart";
 
@@ -16,6 +16,7 @@ export const CatsItem = observer(({cat, handleLikeCat}: TCatsItem) => {
       <img className={styles.img} src={cat.url} alt={cat.id} />
       <button
         className={styles.button}
+        type="button"
         onClick={() => handleLikeCat(cat.id)}
       >
         <span className={`${styles.icon} ${cat.like ? "" : styles.icon_visible}`}>

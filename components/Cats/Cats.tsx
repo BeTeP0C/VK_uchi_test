@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import styles from "./styles.module.scss"
 import { observer } from "mobx-react-lite";
+import styles from "./styles.module.scss"
 import { CatsList } from "./CatsList";
 import { GlobalStore } from "../../common/stores/globalStore";
 import { GlobalStoreContext } from "../../pages/_app";
@@ -27,7 +27,7 @@ export const Cats = observer(() => {
         globalStore.isLoading !== "loading" &&
         globalStore.pages[0].active ? (
           <div className={styles.centering}>
-          <button className={styles.button} onClick={() => {
+          <button className={styles.button} type="button" onClick={() => {
             setIsShowButton(false)
             globalStore.getCats()
           }}>

@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useEffect, useRef } from "react";
-import styles from "./styles.module.scss"
 import { observer } from "mobx-react-lite";
+import styles from "./styles.module.scss"
 import { Header } from "../Header";
 import { GlobalStore } from "../../common/stores/globalStore";
 import { GlobalStoreContext } from "../../pages/_app";

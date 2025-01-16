@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import styles from "./styles.module.scss"
 import { observer } from "mobx-react-lite";
 import { Header } from "../Header";
 import { Cats } from "../Cats";
