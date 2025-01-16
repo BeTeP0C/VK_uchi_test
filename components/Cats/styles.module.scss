@@ -1,0 +1,30 @@
+.container {
+  margin: 0 auto;
+  padding: 112px 62px 31px 62px;
+  max-width: 1440px;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+@media (max-width: 1430px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    max-width: 200px;
+    padding: 112px 5px 30px 5px;
+  }
+}

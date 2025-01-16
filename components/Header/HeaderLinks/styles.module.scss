@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 62px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+@media (max-width: 1430px) {
+  .list {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 450px) {
+  .list {
+    max-width: 250px;
+    padding: 0 5px;
+  }
+}
